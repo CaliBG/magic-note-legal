@@ -18,20 +18,20 @@
 
     <!-- ============ 中文 ============ -->
     <h1>隐私政策</h1>
-    <p class="updated">最近更新：2026 年 7 月 18 日 · <a href="#english">English version below ↓</a></p>
+    <p class="updated">最近更新：2026 年 10 月 28 日 · <a href="#english">English version below ↓</a></p>
 
     <div class="summary">
-      <p><strong>一句话总结：</strong>魔本没有自己的服务器，不设账户，不做统计分析，不投广告。你的手写笔迹、对话记录和设置只保存在你的 iPad 上。开发者收集不到、也看不到你的任何数据。</p>
+      <p>魔本没有开发者运营的笔记服务器，不设应用账户，不含广告或统计分析 SDK。笔迹、对话和设置保存在你的 iPhone 或 iPad 上；本地 AI 内容处理在设备上完成。提供内购的版本通过 Apple 处理购买与权益验证。选择云端 API 时，内容会直接发送给你配置的服务商。</p>
     </div>
 
     <h2>1. 我们是谁</h2>
-    <p>魔本（英文名 Magic Note，下称"本应用"）是一款由个人开发者杨子硕开发的 iPad 手写思考笔记应用。本政策说明本应用如何处理你的信息。</p>
+    <p>魔本（英文名 Magic Note，下称"本应用"）是一款由个人开发者杨子硕开发的 iPhone 与 iPad 手写思考笔记应用。本政策说明本应用如何处理你的信息。</p>
 
-    <h2>2. 我们不收集数据</h2>
-    <p>本应用<strong>不收集任何个人数据</strong>：没有注册登录，没有用户账户，没有数据分析或埋点 SDK，没有广告，没有开发者运营的服务器。你在本应用中产生的一切内容都不会发送给开发者。</p>
+    <h2>2. 开发者不接收笔记内容</h2>
+    <p>本应用没有应用账户、数据分析或埋点 SDK、广告，也没有开发者运营的笔记服务器。<strong>你的笔记内容不会发送给开发者</strong>。可选云端 API 与 Apple 购买服务涉及的数据处理，分别在第 5 节与第 7 节说明。</p>
 
     <h2>3. 存放在你设备上的内容</h2>
-    <p>以下数据仅存储在你的 iPad 本地（并随 iOS 系统备份机制一同备份，由你的系统设置决定）：</p>
+    <p>以下数据存储在你使用本应用的 iPhone 或 iPad 上（是否包含在系统备份中由你的系统设置决定）：</p>
     <ul>
       <li>手写笔迹与页面图像；</li>
       <li>对话记录（你写下的内容的识别文本与 AI 回应）；</li>
@@ -39,15 +39,15 @@
       <li>你自行填写的第三方 API 接口地址与 API Key（仅存本机，用于直接连接你选择的服务商）；</li>
       <li>你下载或导入的本地 AI 模型文件。</li>
     </ul>
-    <p>在应用内删除对话或卸载应用即可清除上述数据。</p>
+    <p>在应用内删除对话会移除对应记录；卸载应用会移除应用的本地数据。系统备份由你的系统设置管理。Apple 的购买记录不会因删除对话或卸载应用而删除，可用于恢复购买。</p>
 
     <h2>4. 端侧 AI 与手写识别</h2>
-    <p>默认情况下，本应用完全离线工作：</p>
+    <p>在本地 AI 模式下，以下内容处理在设备上完成：</p>
     <ul>
       <li>手写识别使用 Apple Vision 框架，<strong>在设备本地完成</strong>；</li>
       <li>AI 回应由内置或你下载的开源模型<strong>在设备本地生成</strong>（基于 llama.cpp）。</li>
     </ul>
-    <p>在纯端侧模式下，你写下的内容不会离开你的设备。</p>
+    <p>在端侧模式下，你的笔迹在本机处理，不会发送给 AI 服务商。</p>
 
     <h2>5. 可选的云端 API（默认关闭）</h2>
     <p>你可以选择在设置中配置第三方大模型服务（如 DeepSeek、Kimi、智谱、OpenAI 等任意 OpenAI 兼容接口）。启用后：</p>
@@ -60,40 +60,44 @@
     <h2>6. 模型下载</h2>
     <p>当你使用应用内的"下载推荐模型"功能时，应用会从 Hugging Face（或其镜像站点）下载模型文件。该请求仅用于获取文件本身，不携带你的任何笔记内容。</p>
 
-    <h2>7. 系统权限</h2>
+    <h2>7. Apple 购买与权益验证</h2>
+    <p>自 2.1 版起，本应用使用 Apple StoreKit 获取商品、价格与试用信息，完成或恢复购买，并验证创作权益。应用在设备上核对 Apple 签名的购买记录，包括商品标识、购买与到期状态、续费及退款或撤销信息；为保留原付费版本用户的权益，还会核对原始应用购买版本。购买记录的获取与缓存由 StoreKit 管理，应用不会将这些记录发送给开发者服务器。</p>
+    <p>本应用不接收你的银行卡信息或 Apple 账户密码，也不会把笔记内容发送给 Apple 用于购买验证。购买与权益验证可能需要连接 Apple 服务，与本地 AI 内容处理是不同的流程。Apple 的账户、结算及商店交易信息处理适用 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a>。</p>
+
+    <h2>8. 系统权限</h2>
     <ul>
       <li><strong>提醒事项</strong>：仅当你主动使用"导入提醒事项"功能时请求，用于把行动清单写入系统提醒事项；</li>
       <li><strong>照片库（仅添加）</strong>：仅当你保存对话长图时使用。</li>
     </ul>
     <p>拒绝授权不影响其他功能的使用。</p>
 
-    <h2>8. 儿童隐私</h2>
-    <p>本应用不面向 13 岁以下儿童设计，也不会有意收集儿童的个人信息（事实上，本应用不收集任何人的个人信息）。</p>
+    <h2>9. 儿童隐私</h2>
+    <p>本应用不面向 13 岁以下儿童设计，开发者不会通过本应用有意收集儿童的个人信息。Apple 购买服务和可选第三方服务的数据处理适用各自的隐私政策。</p>
 
-    <h2>9. 政策变更</h2>
+    <h2>10. 政策变更</h2>
     <p>如本政策发生变化，我们会在本页面更新并修改"最近更新"日期。重大变更会在应用更新说明中提示。</p>
 
-    <h2>10. 联系我们</h2>
+    <h2>11. 联系我们</h2>
     <p>对本政策有任何疑问，请联系：<a href="mailto:Emilia_Mossifd@koreamail.com">Emilia_Mossifd@koreamail.com</a></p>
 
     <hr class="lang-divider" id="english" />
 
     <!-- ============ English ============ -->
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: July 18, 2026</p>
+    <p class="updated">Last updated: October 28, 2026</p>
 
     <div class="summary">
-      <p><strong>In short:</strong> Magic Note has no servers, no accounts, no analytics, and no ads. Your handwriting, conversations, and settings stay on your iPad. The developer cannot collect or see any of your data.</p>
+      <p>Magic Note has no developer-operated note server, app accounts, advertising, or analytics SDK. Handwriting, conversations, and settings are stored on your iPhone or iPad; local AI content processing takes place on the device. Versions with in-app purchases use Apple services for purchases and entitlement verification. If you choose a cloud API, content is sent directly to the provider you configure.</p>
     </div>
 
     <h2>1. Who we are</h2>
-    <p>Magic Note (「魔本」, "the App") is a handwriting-first AI thinking notebook for iPad, built by independent developer Zishuo Yang. This policy explains how the App handles your information.</p>
+    <p>Magic Note (「魔本」, "the App") is a handwriting-first AI thinking notebook for iPhone and iPad, built by independent developer Zishuo Yang. This policy explains how the App handles your information.</p>
 
-    <h2>2. We collect no data</h2>
-    <p>The App <strong>collects no personal data</strong>: no sign-up, no user accounts, no analytics or tracking SDKs, no advertising, and no developer-operated servers. Nothing you create in the App is ever sent to the developer.</p>
+    <h2>2. The developer does not receive your notes</h2>
+    <p>The App has no app accounts, analytics or tracking SDKs, advertising, or developer-operated note server. <strong>Your note content is not sent to the developer.</strong> Data processing for optional cloud APIs and Apple purchase services is described in Sections 5 and 7, respectively.</p>
 
     <h2>3. What stays on your device</h2>
-    <p>The following data is stored only on your iPad (and included in your iOS backups, as controlled by your system settings):</p>
+    <p>The following data is stored on the iPhone or iPad where you use the App. Its inclusion in system backups is controlled by your system settings:</p>
     <ul>
       <li>Handwriting strokes and page images;</li>
       <li>Conversation history (recognized text of your pages and AI replies);</li>
@@ -101,15 +105,15 @@
       <li>Any third-party API endpoint and API key you enter (stored locally, used only to connect directly to the provider you choose);</li>
       <li>Local AI model files you download or import.</li>
     </ul>
-    <p>Deleting conversations in the App, or uninstalling the App, removes this data.</p>
+    <p>Deleting a conversation removes its records; uninstalling the App removes its local data. System backups are managed through your system settings. Apple purchase records are not deleted when you remove a conversation or uninstall the App and can be used to restore purchases.</p>
 
     <h2>4. On-device AI and handwriting recognition</h2>
-    <p>By default the App works fully offline:</p>
+    <p>In local AI mode, the following content processing takes place on the device:</p>
     <ul>
       <li>Handwriting recognition uses Apple's Vision framework and runs <strong>entirely on your device</strong>;</li>
       <li>AI replies are generated <strong>on your device</strong> by bundled or downloaded open-source models (via llama.cpp).</li>
     </ul>
-    <p>In on-device mode, what you write never leaves your iPad.</p>
+    <p>In on-device mode, your writing is processed on your device without being sent to an AI provider.</p>
 
     <h2>5. Optional cloud APIs (off by default)</h2>
     <p>You may configure a third-party LLM service in Settings (any OpenAI-compatible endpoint, e.g. DeepSeek, Kimi, Zhipu, OpenAI). When enabled:</p>
@@ -122,20 +126,24 @@
     <h2>6. Model downloads</h2>
     <p>When you use the in-app model download feature, the App fetches model files from Hugging Face (or a mirror). This request retrieves the file only and carries none of your notes.</p>
 
-    <h2>7. System permissions</h2>
+    <h2>7. Apple purchases and entitlement verification</h2>
+    <p>Starting with version 2.1, the App uses Apple StoreKit to obtain products, prices, and introductory-offer information, complete or restore purchases, and verify creation access. It checks Apple-signed purchase records on the device, including product identifiers, purchase and expiration status, renewal information, and refunds or revocations. It also checks the original app purchase version to preserve access for customers of the original paid app. StoreKit manages the retrieval and caching of purchase records; the App does not send these records to a developer server.</p>
+    <p>The App does not receive your payment-card details or Apple Account password, and it does not send note content to Apple for purchase verification. Purchase and entitlement checks may require a connection to Apple services and are separate from local AI content processing. Apple’s handling of account, billing, and store transaction information is subject to <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
+
+    <h2>8. System permissions</h2>
     <ul>
       <li><strong>Reminders</strong> — requested only when you use "Export to Reminders", to write your action items into the system Reminders app;</li>
       <li><strong>Photo Library (add only)</strong> — used only when you save a conversation image.</li>
     </ul>
     <p>Declining a permission does not affect other features.</p>
 
-    <h2>8. Children's privacy</h2>
-    <p>The App is not directed at children under 13 and does not knowingly collect personal information from children (indeed, it collects no one's personal information).</p>
+    <h2>9. Children's privacy</h2>
+    <p>The App is not directed at children under 13, and the developer does not knowingly collect children's personal information through the App. Apple purchase services and optional third-party services handle data under their respective privacy policies.</p>
 
-    <h2>9. Changes to this policy</h2>
+    <h2>10. Changes to this policy</h2>
     <p>If this policy changes, we will update this page and revise the "Last updated" date. Material changes will be noted in App update notes.</p>
 
-    <h2>10. Contact</h2>
+    <h2>11. Contact</h2>
     <p>Questions about this policy: <a href="mailto:Emilia_Mossifd@koreamail.com">Emilia_Mossifd@koreamail.com</a></p>
 
     <footer class="site">
